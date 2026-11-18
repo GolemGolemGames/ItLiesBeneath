@@ -4,17 +4,12 @@ using UnityEngine;
 public class FishModel : MonoBehaviour
 {
     // For testing purposes, we can assign a FishSO in the inspector to create a FishData instance.
-    [SerializeField] private FishSO _fishSO;
+    [SerializeField] private FishSO _fishSO; //Debug
     private FishData _fishData;
 
     void Start()
     {
         Initialize();
-    }
-
-    void Update()
-    {
-        
     }
 
     private void Initialize()
