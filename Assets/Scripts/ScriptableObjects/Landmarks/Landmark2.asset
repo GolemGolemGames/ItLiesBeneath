@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d982076d6327fe479ff23e33a5f7986, type: 3}
+  m_Name: Landmark2
+  m_EditorClassIdentifier: Assembly-CSharp::LandmarkSO
+  _name: 
+  _associatedFishes:
+  - _fishSO: {fileID: 11400000, guid: e5212299ebd3e4a419e3cbd0f931b3f5, type: 2}
+    _rarity: 1
+  - _fishSO: {fileID: 11400000, guid: c482efe0a386a414986e9695ed3bed21, type: 2}
+    _rarity: 2
+  - _fishSO: {fileID: 11400000, guid: eef58e1543fa5db4c99e54adcfef847b, type: 2}
+    _rarity: 3
+  - _fishSO: {fileID: 11400000, guid: ed8d543b28578de4d8a176b95a4594b6, type: 2}
+    _rarity: 4
+  - _fishSO: {fileID: 11400000, guid: d52983f393e0bdf4cb65b6d9f78fd475, type: 2}
+    _rarity: 5
+  - _fishSO: {fileID: 11400000, guid: 59a7436f5c037d348aded12b2b6d1c7d, type: 2}
+    _rarity: 3
+  - _fishSO: {fileID: 11400000, guid: d9e6022ba2efa7b43838a29d14535b63, type: 2}
+    _rarity: 4
+  - _fishSO: {fileID: 11400000, guid: 8fdfa389ad406ff4c8b06668bcff9473, type: 2}
+    _rarity: 5
+  _distanceMultiplier: 1
+  _useFixedDistance: 0
+  _fixedDistance: 100
+  _mesh: {fileID: 0}
+  _tier1SpawnChance: 0.5
+  _tier2SpawnChance: 0.25
+  _tier3SpawnChance: 0.15
+  _tier4SpawnChance: 0.08
+  _tier5SpawnChance: 0.02

@@ -1,11 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(fileName = "New Landmark", menuName = "ScriptableObjects/Landmark")]
 public class LandmarkSO : ScriptableObject
 {
     [SerializeField] private string _name;
     [SerializeField] private List<LandmarkSpawnData> _associatedFishes;
+    [SerializeField] private float _distanceMultiplier = 1f;
+    [FormerlySerializedAs("_isOpenSea")]
+    [SerializeField] private bool _useFixedDistance;
+    [FormerlySerializedAs("_openSeaDistance")]
+    [SerializeField] private float _fixedDistance = 100f;
     [SerializeField] private Mesh _mesh;
 
     [Header("Tier chances (always sum to 1)")]
@@ -17,11 +23,22 @@ public class LandmarkSO : ScriptableObject
 
     [System.NonSerialized] private float[] _previousChances;
 
-    public float[] TierChances => new[]
+    public float[] TierChances
+    {
+        get
+        {
+            return new[]
     {
         _tier1SpawnChance, _tier2SpawnChance, _tier3SpawnChance,
         _tier4SpawnChance, _tier5SpawnChance
     };
+        }
+    }
+
+    public List<LandmarkSpawnData> AssociatedFishes { get => _associatedFishes; set => _associatedFishes = value; }
+    public float DistanceMultiplier { get => _distanceMultiplier; set => _distanceMultiplier = value; }
+    public bool UseFixedDistance { get => _useFixedDistance; set => _useFixedDistance = value; }
+    public float FixedDistance { get => _fixedDistance; set => _fixedDistance = value; }
 
     private void OnValidate()
     {

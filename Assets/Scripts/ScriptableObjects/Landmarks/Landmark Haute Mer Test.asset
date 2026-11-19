@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d982076d6327fe479ff23e33a5f7986, type: 3}
+  m_Name: Landmark Haute Mer Test
+  m_EditorClassIdentifier: Assembly-CSharp::LandmarkSO
+  _name: Haute Mer
+  _associatedFishes:
+  - _fishSO: {fileID: 11400000, guid: 704d55af79c087c4b90ebc24c24f688a, type: 2}
+    _rarity: 1
+  - _fishSO: {fileID: 11400000, guid: 6a03efebd81b4f149ab982c0d7cf189d, type: 2}
+    _rarity: 2
+  - _fishSO: {fileID: 11400000, guid: d8e4e31dd9ad51641b902d56086cd170, type: 2}
+    _rarity: 3
+  - _fishSO: {fileID: 11400000, guid: 3faad550b0179734ca7036dbdc36e949, type: 2}
+    _rarity: 3
+  - _fishSO: {fileID: 11400000, guid: 6a56822dab0d1054fbe03f906c27f590, type: 2}
+    _rarity: 5
+  - _fishSO: {fileID: 11400000, guid: 996d58c948b04a2449a9293ce1e5cb94, type: 2}
+    _rarity: 3
+  - _fishSO: {fileID: 11400000, guid: 5664deb0473ff264d9f6c131789a4e8b, type: 2}
+    _rarity: 4
+  - _fishSO: {fileID: 11400000, guid: 793e1d32891dccc49a5d3486921e0e6f, type: 2}
+    _rarity: 5
+  _distanceMultiplier: 1
+  _useFixedDistance: 1
+  _fixedDistance: 20
+  _mesh: {fileID: 0}
+  _tier1SpawnChance: 0.5
+  _tier2SpawnChance: 0.25
+  _tier3SpawnChance: 0.15
+  _tier4SpawnChance: 0.08
+  _tier5SpawnChance: 0.02
